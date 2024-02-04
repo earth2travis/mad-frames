@@ -1,67 +1,67 @@
-import { NextResponse } from "next/server";
-import { ImageResponse } from "next/og";
-import { join } from "path";
-import * as fs from "fs";
+import { NextResponse } from 'next/server';
+import { ImageResponse } from 'next/og';
+import { join } from 'path';
+import * as fs from 'fs';
 
-const interRegPath = join(process.cwd(), "public/Inter-Regular.ttf");
+const interRegPath = join(process.cwd(), 'public/Inter-Regular.ttf');
 let interReg = fs.readFileSync(interRegPath);
 
-const interBoldPath = join(process.cwd(), "public/Inter-Bold.ttf");
+const interBoldPath = join(process.cwd(), 'public/Inter-Bold.ttf');
 let interBold = fs.readFileSync(interBoldPath);
 
 export async function GET() {
   return new ImageResponse(
     (
-<div
+      <div
         style={{
-          display: "flex", // Use flex layout
-          flexDirection: "row", // Align items horizontally
-          alignItems: "stretch", // Stretch items to fill the container height
-          width: "100%",
-          height: "100vh", // Full viewport height
-          backgroundColor: "white",
+          display: 'flex', // Use flex layout
+          flexDirection: 'row', // Align items horizontally
+          alignItems: 'stretch', // Stretch items to fill the container height
+          width: '100%',
+          height: '100vh', // Full viewport height
+          backgroundColor: 'white',
         }}
       >
         <img
           style={{
-            height: "100%", // Make image full height
-            objectFit: "cover", // Cover the area without losing aspect ratio
-            width: "35%", // Image takes up 40% of the container's width
+            height: '100%', // Make image full height
+            objectFit: 'cover', // Cover the area without losing aspect ratio
+            width: '100%', // Image takes up 40% of the container's width
           }}
-          src="https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/2639523a-690b-47af-16ab-ca07697fd000/original"
+          src="https://mad-frames.vercel.app/banality.png"
         />
         <div
           style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "flex-start",
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-start',
             paddingLeft: 24,
             paddingRight: 24,
             lineHeight: 1.2,
             fontSize: 36,
-            color: "black",
+            color: 'black',
             flex: 1,
-            overflow: "hidden",
+            overflow: 'hidden',
             marginTop: 24,
           }}
         >
           <div
             style={{
-              color: "#0a588c",
+              color: '#0a588c',
               fontSize: 72,
               marginBottom: 12,
-              display: "flex"
+              display: 'flex',
             }}
           >
-            <strong>Echo The Dolphin</strong>
+            <strong>Name of Person</strong>
           </div>
           <div
             style={{
-              display: "flex",
-              overflow: "hidden",
+              display: 'flex',
+              overflow: 'hidden',
             }}
           >
-            Type something in the text input below and Echo will say it back.
+            Type a name in the text input below.
           </div>
         </div>
       </div>
@@ -71,16 +71,16 @@ export async function GET() {
       height: 800,
       fonts: [
         {
-          name: "Inter",
+          name: 'Inter',
           data: interReg,
           weight: 400,
-          style: "normal",
+          style: 'normal',
         },
         {
-          name: "Inter",
+          name: 'Inter',
           data: interBold,
           weight: 800,
-          style: "normal",
+          style: 'normal',
         },
       ],
     }
