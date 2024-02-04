@@ -48,7 +48,7 @@ export async function GET(req: NextRequest) {
             }}
           >
             <strong>Name: </strong>
-            {message}
+            <strong>{message}</strong>
           </div>
           {/* <div
             style={{
