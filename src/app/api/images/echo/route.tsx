@@ -35,27 +35,16 @@ export async function GET(req: NextRequest) {
             color: 'black',
             flex: 1,
             overflow: 'hidden',
-            // marginTop: 24,
+            marginTop: 24,
           }}
         >
           <div
             style={{
               color: '#000000',
-              fontSize: 96,
+              fontSize: 128,
               marginBottom: 4,
               display: 'flex',
               textTransform: 'uppercase',
-            }}
-          >
-            <strong>Name</strong>
-          </div>
-          <div
-            style={{
-              color: '#F9E1A3',
-              fontSize: 48,
-              display: 'flex',
-              textTransform: 'uppercase',
-              overflow: 'hidden',
             }}
           >
             {message}
