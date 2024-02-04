@@ -3,11 +3,8 @@ import { ImageResponse } from 'next/og';
 import { join } from 'path';
 import * as fs from 'fs';
 
-const interRegPath = join(process.cwd(), 'public/Inter-Regular.ttf');
-let interReg = fs.readFileSync(interRegPath);
-
-const interBoldPath = join(process.cwd(), 'public/Inter-Bold.ttf');
-let interBold = fs.readFileSync(interBoldPath);
+const poppinsBlackPath = join(process.cwd(), 'public/Poppins-Black.ttf');
+let poppinsBlack = fs.readFileSync(poppinsBlackPath);
 
 export async function GET() {
   return new ImageResponse(
@@ -64,15 +61,9 @@ export async function GET() {
       height: 800,
       fonts: [
         {
-          name: 'Inter',
-          data: interReg,
-          weight: 400,
-          style: 'normal',
-        },
-        {
-          name: 'Inter',
-          data: interBold,
-          weight: 800,
+          name: 'Poppins',
+          data: poppinsBlack,
+          weight: 900,
           style: 'normal',
         },
       ],
