@@ -20,7 +20,7 @@ export async function GET(req: NextRequest) {
           alignItems: 'stretch', // Stretch items to fill the container height
           width: '100%',
           height: '100vh', // Full viewport height
-          backgroundColor: '#F098C6',
+          backgroundColor: '#000000',
         }}
       >
         <div
@@ -40,7 +40,7 @@ export async function GET(req: NextRequest) {
         >
           <div
             style={{
-              color: '#000000',
+              color: '#F098C6',
               fontSize: 128,
               marginBottom: 4,
               display: 'flex',
