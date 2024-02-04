@@ -47,21 +47,14 @@ export async function GET() {
         >
           <div
             style={{
-              color: '#0a588c',
+              color: '#000000',
               fontSize: 72,
               marginBottom: 12,
               display: 'flex',
+              textTransform: 'uppercase',
             }}
           >
-            <strong>Echo The Dolphin</strong>
-          </div>
-          <div
-            style={{
-              display: 'flex',
-              overflow: 'hidden',
-            }}
-          >
-            Type something in the text input below and Echo will say it back.
+            <strong>Name</strong>
           </div>
         </div>
       </div>
