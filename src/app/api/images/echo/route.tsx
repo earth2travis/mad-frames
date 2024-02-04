@@ -47,10 +47,11 @@ export async function GET(req: NextRequest) {
               textTransform: 'uppercase',
             }}
           >
-            <strong>Name: </strong>
+            <strong>Name</strong>
           </div>
           <div
             style={{
+              color: '#F9E1A3',
               fontSize: 48,
               display: 'flex',
               overflow: 'hidden',
