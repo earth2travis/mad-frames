@@ -37,8 +37,8 @@ export async function GET() {
           <div
             style={{
               color: '#000000',
-              fontSize: 72,
-              marginBottom: 12,
+              fontSize: 94,
+              marginBottom: 4,
               display: 'flex',
               textTransform: 'uppercase',
             }}

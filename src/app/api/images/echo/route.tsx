@@ -41,23 +41,23 @@ export async function GET(req: NextRequest) {
           <div
             style={{
               color: '#000000',
-              fontSize: 72,
-              marginBottom: 12,
+              fontSize: 96,
+              marginBottom: 4,
               display: 'flex',
               textTransform: 'uppercase',
             }}
           >
             <strong>Name: </strong>
-            <strong>{message}</strong>
           </div>
-          {/* <div
+          <div
             style={{
+              fontSize: 48,
               display: 'flex',
               overflow: 'hidden',
             }}
           >
             {message}
-          </div> */}
+          </div>
         </div>
       </div>
     ),
