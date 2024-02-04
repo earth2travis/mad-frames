@@ -16,17 +16,9 @@ export async function GET() {
           alignItems: 'stretch', // Stretch items to fill the container height
           width: '100%',
           height: '100vh', // Full viewport height
-          backgroundColor: 'white',
+          backgroundColor: '#F9E1A3',
         }}
       >
-        <img
-          style={{
-            height: '100%', // Make image full height
-            objectFit: 'cover', // Cover the area without losing aspect ratio
-            width: '35%', // Image takes up 40% of the container's width
-          }}
-          src="https://mad-frames.vercel.app/banality.png"
-        />
         <div
           style={{
             display: 'flex',
