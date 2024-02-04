@@ -16,7 +16,7 @@ export async function GET() {
           alignItems: 'stretch', // Stretch items to fill the container height
           width: '100%',
           height: '100vh', // Full viewport height
-          backgroundColor: '#F9E1A3',
+          backgroundColor: '#F098C6',
         }}
       >
         <div
