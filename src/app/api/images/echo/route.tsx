@@ -47,16 +47,17 @@ export async function GET(req: NextRequest) {
               textTransform: 'uppercase',
             }}
           >
-            <strong>Name</strong>
+            <strong>Name: </strong>
+            {message}
           </div>
-          <div
+          {/* <div
             style={{
               display: 'flex',
               overflow: 'hidden',
             }}
           >
             {message}
-          </div>
+          </div> */}
         </div>
       </div>
     ),
