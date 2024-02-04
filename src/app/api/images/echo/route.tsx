@@ -35,7 +35,7 @@ export async function GET(req: NextRequest) {
             color: 'black',
             flex: 1,
             overflow: 'hidden',
-            marginTop: 24,
+            // marginTop: 24,
           }}
         >
           <div
@@ -54,6 +54,7 @@ export async function GET(req: NextRequest) {
               color: '#F9E1A3',
               fontSize: 48,
               display: 'flex',
+              textTransform: 'uppercase',
               overflow: 'hidden',
             }}
           >
