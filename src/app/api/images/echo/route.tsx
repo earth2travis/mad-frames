@@ -5,11 +5,8 @@ import * as fs from 'fs';
 
 export const dynamic = 'force-dynamic';
 
-const interRegPath = join(process.cwd(), 'public/Inter-Regular.ttf');
-let interReg = fs.readFileSync(interRegPath);
-
-const interBoldPath = join(process.cwd(), 'public/Inter-Bold.ttf');
-let interBold = fs.readFileSync(interBoldPath);
+const poppinsBlackPath = join(process.cwd(), 'public/Poppins-Black.ttf');
+let poppinsBlack = fs.readFileSync(poppinsBlackPath);
 
 export async function GET(req: NextRequest) {
   const searchParams = req.nextUrl.searchParams;
@@ -23,7 +20,7 @@ export async function GET(req: NextRequest) {
           alignItems: 'stretch', // Stretch items to fill the container height
           width: '100%',
           height: '100vh', // Full viewport height
-          backgroundColor: 'white',
+          backgroundColor: '#F098C6',
         }}
       >
         <div
@@ -43,13 +40,14 @@ export async function GET(req: NextRequest) {
         >
           <div
             style={{
-              color: '#0a588c',
+              color: '#000000',
               fontSize: 72,
               marginBottom: 12,
               display: 'flex',
+              textTransform: 'uppercase',
             }}
           >
-            <strong>Echo Says...</strong>
+            <strong>Name</strong>
           </div>
           <div
             style={{
@@ -57,7 +55,7 @@ export async function GET(req: NextRequest) {
               overflow: 'hidden',
             }}
           >
-            &quot;{message}&quot;
+            {message}
           </div>
         </div>
       </div>
@@ -67,15 +65,9 @@ export async function GET(req: NextRequest) {
       height: 800,
       fonts: [
         {
-          name: 'Inter',
-          data: interReg,
-          weight: 400,
-          style: 'normal',
-        },
-        {
-          name: 'Inter',
-          data: interBold,
-          weight: 800,
+          name: 'Poppins',
+          data: poppinsBlack,
+          weight: 900,
           style: 'normal',
         },
       ],
