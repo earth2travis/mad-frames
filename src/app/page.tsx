@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Echo from '@/app/components/Echo';
+import Looney from '@/app/components/Looney';
 
 const postUrl = `https://mad-frames.vercel.app/api/echo`;
 
@@ -25,7 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function Home() {
   return (
     <main className="flex flex-col text-center lg:p-16">
-      <Echo />
+      <Looney />
     </main>
   );
 }
