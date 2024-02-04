@@ -26,7 +26,7 @@ export async function GET() {
           style={{
             height: '100%', // Make image full height
             objectFit: 'cover', // Cover the area without losing aspect ratio
-            width: '100%', // Image takes up 40% of the container's width
+            width: '40%', // Image takes up 40% of the container's width
           }}
           src="https://mad-frames.vercel.app/banality.png"
         />
